@@ -7,7 +7,7 @@ import argparse
 import os
 import tensorflow as tf
 import numpy as np
-from tensorflow.models.rnn import rnn_cell
+from tensorflow.python.ops import rnn_cell
 from tensorflow.python.framework import ops
 from tensorflow.python.ops import array_ops
 

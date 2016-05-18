@@ -40,9 +40,7 @@ def load_idl_tf(idlfile, H, jitter):
     for epoch in itertools.count():
         random.shuffle(annos)
         for anno in annos:
-            I = imread(anno.imageName)
-            if I.shape[2] == 4:
-                I = I[:, :, :3]
+            I = imread(anno.imageName,mode='RGB')
             if I.shape[0] != H["arch"]["image_height"] or I.shape[1] != H["arch"]["image_width"]:
                 if epoch == 0:
                     anno = rescale_boxes(I.shape, anno, H["arch"]["image_height"], H["arch"]["image_width"])
