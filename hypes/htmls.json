@@ -7,13 +7,13 @@
     "arch": {
         "use_lstm": false,
         "use_dropout": true, 
-        "image_width": 384, 
-        "image_height": 512,
-        "grid_height": 16, 
-        "grid_width": 12,
+        "image_width": 192, 
+        "image_height": 256,
+        "grid_height": 8, 
+        "grid_width": 6,
         "batch_size": 1,
         "region_size": 16,
-        "lstm_size": 200,
+        "lstm_size": 128,
         "num_classes": 2,
         "rnn_len": 1
     }, 
