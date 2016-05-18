@@ -1,0 +1,32 @@
+{
+    "data": {
+        "train_idl": "./data/htmls/train.idl",
+        "test_idl": "./data/htmls/val.idl",
+        "truncate_data": false
+    },
+    "arch": {
+        "use_lstm": false,
+        "use_dropout": true, 
+        "image_width": 384, 
+        "image_height": 512,
+        "grid_height": 16, 
+        "grid_width": 12,
+        "batch_size": 1,
+        "region_size": 16,
+        "lstm_size": 200,
+        "num_classes": 2,
+        "rnn_len": 1
+    }, 
+    "logging": {
+    },
+    "solver": {
+        "opt": "RMS",
+        "use_jitter": false,
+        "rnd_seed": 1,
+        "epsilon": 0.00001, 
+        "learning_rate": 0.001, 
+        "learning_rate_step": 7500, 
+        "weights": "",
+        "head_weights": [1.0, 0.1]
+    }
+}
