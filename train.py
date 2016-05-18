@@ -135,7 +135,7 @@ def build(H, q):
     arch = H['arch']
     solver = H["solver"]
 
-    os.environ['CUDA_VISIBLE_DEVICES'] = '-1'#str(solver['gpu'])
+    os.environ['CUDA_VISIBLE_DEVICES'] = str(solver['gpu'])
 
     #gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
     gpu_options = tf.GPUOptions()
